@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<HTML>
+<BODY>
+<button onclick = "MyFunction()">Нажми меня, please!</button>
+<p id="admin_foo">Текст, помеченный меткой admin</p>
+<p id="name_foo">Текст, помеченный меткой name</p>
+<script>
+	var admin;
+	var name;
+	name = "Виталий Валентинович";
+	admin = name;
+	alert(admin);
+	
+	function MyFunction(){
+	admin = "Титков Иван Дмитриевич"
+	document.getElementById("admin_foo").innerHTML=admin;
+	document.getElementById("name_foo").innerHTML=name;
+	}
+</script>
+</BODY>
+</HTML>
