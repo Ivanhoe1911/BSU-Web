@@ -1,0 +1,25 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Индивидуальное задание 1</title>
+</head>
+<body>
+<script>
+	do{
+	var a = parseInt(window.prompt("Введите число a", ""), 10);
+	}while(isNaN(a));
+	alert('Число ' + a + ' принято');
+
+	do{
+	var b = parseInt(window.prompt("Введите число b", ""), 10);
+	}while(isNaN(b));
+	alert('Число ' + b + ' принято');
+
+	if (a * b < 0)
+	alert('Произведение чисел отрицательно!');
+
+	alert((Math.sqrt(a * b) < 4) ? 'Мало' : 'Много');
+</script>
+</body>
+</html>
