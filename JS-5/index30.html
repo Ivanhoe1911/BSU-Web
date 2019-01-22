@@ -1,0 +1,35 @@
+﻿<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>Пример 30</title>
+	</head>
+	<body>
+		<script>
+			do{
+			var x = parseFloat(prompt('Введите число X: ').replace(/,/g, '.'));
+				if (isNaN(x))
+				{alert('Некорректное число! Повторите ввод значения X.');}}
+			while (isNaN(x));
+
+			do{
+			var y = parseFloat(prompt('Введите число Y: ').replace(/,/g, '.'));
+				if (isNaN(y)){
+				alert('Некорректное число! Повторите ввод значения Y.');}}
+			while (isNaN(y));
+
+			var res = Math.pow(x, y);
+
+			switch(isNaN(res) || res){
+			case true:
+			alert('Нелья возвести данное число в данную степень. Получено комплексное число (см. Википедия)');
+			break;
+			case Infinity:
+			alert('Ноль нельзя возводить в отрицательную спепень!');
+			break;
+			default:
+			alert('Число ' + x + ' в степени ' + y + ' равно ' + res);
+			}
+		</script>
+	</body>
+</html>
