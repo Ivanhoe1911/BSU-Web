@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<script type="text/javascript">
+		var myArray1 = [1, 2, 3, 4, 5];
+		document.write("myArray1: " + myArray1 + "<br>");
+		
+		var myArray2 = myArray1.splice(1, 0, 'a', 'b');
+		var myArray2 = myArray1.splice(6, 0, 'c');
+		var myArray2 = myArray1.splice(8, 0, 'e');
+	</script>
+</head>
+<body>
+	<script>
+		document.write("myArray1 spliced: " + myArray1);
+		console.log(myArray1);
+	</script>
+</body>
+</html>

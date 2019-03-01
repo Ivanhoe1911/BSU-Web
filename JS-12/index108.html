@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<script type="text/javascript">
+		var myArray1 = [5, , 2, , 18];
+	</script>
+</head>
+<body>
+	Версия 1:<br>
+	<script>
+		for (var i = 0; i < myArray1.length; i++) {
+			document.write(myArray1[i] + '<br>');
+			console.log(myArray1[i]);
+		}
+	</script>
+	<br>
+	<br>
+	Версия 2:<br>
+	<script>
+		for (var i = 0; i < myArray1.length; i++) {
+			if (myArray1[i] != undefined){
+				document.write(myArray1[i] + '<br>');
+				console.log(myArray1[i]);
+			}
+		}
+	</script>
+</body>
+</html>

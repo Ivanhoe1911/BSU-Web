@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+	<script type="text/javascript">
+		var myArray1 = ['a', 'b', 'c', 'b', 'a'];
+		document.write("myArray1: " + myArray1 + "<br>");
+				
+		var myArray1 = myArray1.sort().filter(function(element, index, array){
+			return !index || element != array[index - 1];
+		});
+	</script>
+</head>
+<body>
+	<script>
+		document.write("myArray1 sorted and filtered: " + myArray1);
+		console.log(myArray1);
+	</script>
+</body>
+</html>
